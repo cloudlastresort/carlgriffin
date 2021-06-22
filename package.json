@@ -1,0 +1,19 @@
+{
+  "name": "photographer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/main.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@barba/css": "^2.1.15"
+  }
+}
