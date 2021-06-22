@@ -297,8 +297,60 @@ body{
 }
 
 
-// ----------------CONTENT PAGES---------------------
+// ----------------ABOUT---------------------
+.content.page{
+    display:flex;
+    justify-content: space-between;
+}
 
+.content.page .box-left{
+    position: relative;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content.page .box-right{
+    position: relative;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content.page .box-left h2{
+    font-family: var(--tit-font);
+    font-size: var(--font-size-tit);
+    font-weight: normal;
+    margin:0;
+}
+
+.content.page .box-right p{
+    font-size: var(--font-size-md);
+    line-height: 180%;
+    margin:0 0 15px 0;
+}
+
+.content.page .box-right .images{
+    list-style: none;
+    margin:50px 0 0 0;
+    padding:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.content.page .box-right .images li{
+    width: calc(25% - 15px);
+}
+
+.content.page .box-right .images li .img-cover{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    // clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+}
 
 // -----------------CONTENT WORK------------------------
 
