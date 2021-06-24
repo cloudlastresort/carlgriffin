@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@200;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --color-1:#fff;
   --color-2: #000;
@@ -6,6 +7,7 @@
   --color-4:#aeaeae;
   --body-font:'Raleway', sans-serif;
   --tit-font:'Prata', serif;
+  --logo-font:'Pacifico', cursive;
   --font-size-xs:14px;
   --font-size-md:18px;
   --font-size-lg:32px;
@@ -56,12 +58,20 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
 
-.header .logo {
+.header .logo,
+.header .logo:active,
+.header .logo:hover,
+.header .logo:visited,
+.header .logo:focus {
   display: block;
   width: 100px;
-  font-size: var(--font-size-xl);
+  white-space: nowrap;
+  font-family: var(--logo-font);
+  font-size: var(--font-size-md);
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+  text-decoration: none;
+  color: var(--color-2); }
 
 .header .hamburger {
   outline: none;
@@ -110,6 +120,43 @@ body {
 
 .nav .menu li a:hover {
   transform: translateX(30px); }
+
+.home {
+  height: calc(100vh - 200px); }
+  .home h1 {
+    font-family: var(--tit-font);
+    font-size: var(--font-size-tit);
+    margin-bottom: 2rem; }
+  .home a:link,
+  .home a:visited,
+  .home a:focus,
+  .home a {
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    background-color: var(--color-1);
+    border: 1px solid var(--color-2);
+    padding: 1rem 3rem;
+    color: var(--color-2);
+    transition: all .7s linear; }
+  .home a:hover {
+    background-color: var(--color-2);
+    color: var(--color-1); }
+
+.about {
+  height: calc(100vh - 200px); }
+  .about p {
+    line-height: 180%; }
+  .about h1 {
+    padding-top: 3rem;
+    font-family: var(--tit-font);
+    font-size: var(--font-size-tit);
+    text-transform: capitalize; }
+  .about-img {
+    background-image: url("../img/carlgriffin.jpg");
+    background-size: conver;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; }
 
 .content {
   width: 100%;

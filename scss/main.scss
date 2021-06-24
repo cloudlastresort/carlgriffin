@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@200;400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 :root{
     --color-1:#fff;
@@ -8,6 +9,7 @@
 
     --body-font:'Raleway', sans-serif;
     --tit-font:'Prata', serif;
+    --logo-font:'Pacifico', cursive;
 
     --font-size-xs:14px;
     --font-size-md:18px;
@@ -75,12 +77,20 @@ body{
     border-bottom: 1px solid rgba(0,0,0,.07);
 }
 
-.header .logo{
+.header .logo,
+.header .logo:active,
+.header .logo:hover,
+.header .logo:visited,
+.header .logo:focus{
     display: block;
-    width:100px;
-    font-size: var(--font-size-xl);
+    width:100px;  
+    white-space: nowrap;  
+    font-family: var(--logo-font);
+    font-size: var(--font-size-md);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    text-decoration: none;
+    color: var(--color-2);
 }
 
 .header .hamburger{
@@ -136,6 +146,66 @@ body{
 
 .nav .menu li a:hover{
    transform: translateX(30px);
+}
+
+//-----------------HOME--------------------------
+
+
+.home{    
+    height: calc(100vh - 200px);  
+    
+    & h1{
+        font-family: var(--tit-font);
+        font-size: var(--font-size-tit);
+        margin-bottom: 2rem;
+    }
+        & a:link,
+        & a:visited,
+        & a:focus,
+        & a{
+            text-decoration: none;            
+            font-size: var(--font-size-md);
+            background-color:var(--color-1);
+            border:1px solid var(--color-2);
+            padding: 1rem 3rem;
+            color:var(--color-2);
+            transition:all .7s linear ;
+            
+        }
+        
+        & a:hover{
+            background-color: var(--color-2);
+            color: var(--color-1);
+            
+        }
+    }
+    
+
+
+//-----------------------ABOUT-------------------------------
+
+.about{
+    height:calc(100vh - 200px);    
+      
+    p {
+        line-height: 180%;
+    }
+
+    h1{
+        padding-top: 3rem;  
+        font-family: var(--tit-font);
+        font-size: var(--font-size-tit);
+        text-transform: capitalize;
+    }
+
+    &-img{
+        background-image: url('../img/carlgriffin.jpg');
+        background-size: conver;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;    
+    }
+    
 }
 
 // ------------CONTENT----------------------
