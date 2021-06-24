@@ -693,6 +693,7 @@ body{
     }
     .content .swiper-container .swiper-slide .box-title h2{
         margin: 0;
+        font-size: 1rem;// overlapping issue
     } 
 
     .content .swiper-container .swiper-slide .box-title p,
@@ -737,6 +738,7 @@ body{
         position: relative;
         height: auto;
         padding: 30px 50px;
+        
     }
     .content .swiper-container .swiper-slide .box-img{
         width: 100%;

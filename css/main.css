@@ -568,7 +568,8 @@ body {
     margin: 0;
     padding: 0; }
   .content .swiper-container .swiper-slide .box-title h2 {
-    margin: 0; }
+    margin: 0;
+    font-size: 1rem; }
   .content .swiper-container .swiper-slide .box-title p,
   .content .swiper-container .swiper-slide .box-title .view {
     display: none; }
