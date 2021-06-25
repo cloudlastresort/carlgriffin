@@ -271,7 +271,7 @@ function init(){
                     namespace:'home'
                 },
                 to:{
-                    namespace:'work'
+                    namespace:'services'
                 }
             }
         ]

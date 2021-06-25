@@ -317,7 +317,7 @@ body{
 
 .content .swiper-container .swiper-slide .box-title h2{
     font-family: var(--tit-font);
-    font-size: var(--font-size-tit);
+    font-size: var(--font-size-xl);
     font-weight: normal;
     margin:0 0 30px 0;
 }
@@ -691,9 +691,16 @@ body{
         margin:0;
         padding: 0;
     }
+
+    .content .swiper-container .swiper-slide .box-title{
+        position: relative;
+        height: auto;
+        //padding: 30px 50px;
+    }
     .content .swiper-container .swiper-slide .box-title h2{
         margin: 0;
-        font-size: 1rem;// overlapping issue
+        font-size: 2.5rem;// overlapping issue
+        
     } 
 
     .content .swiper-container .swiper-slide .box-title p,
