@@ -121,12 +121,20 @@ body {
 .nav .menu li a:hover {
   transform: translateX(30px); }
 
+.index-page {
+  background-image: url("../img/camera.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 200px); }
+
 .home {
   height: calc(100vh - 200px); }
   .home h1 {
     font-family: var(--tit-font);
     font-size: var(--font-size-tit);
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    color: var(--color-1); }
   .home a:link,
   .home a:visited,
   .home a:focus,
@@ -140,7 +148,8 @@ body {
     transition: all .7s linear; }
   .home a:hover {
     background-color: var(--color-2);
-    color: var(--color-1); }
+    color: var(--color-1);
+    border: 1px solid var(--color-1); }
 
 .about {
   height: calc(100vh - 200px); }

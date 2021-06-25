@@ -56,6 +56,7 @@ body{
     opacity: 0;
 }
 
+
 // ----------PAGE IN TRANSITION-------------------
 .is-transitioning{
     pointer-events: none;
@@ -149,7 +150,13 @@ body{
 }
 
 //-----------------HOME--------------------------
-
+.index-page {
+    background-image: url('../img/camera.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 200px);
+}
 
 .home{    
     height: calc(100vh - 200px);  
@@ -158,6 +165,7 @@ body{
         font-family: var(--tit-font);
         font-size: var(--font-size-tit);
         margin-bottom: 2rem;
+        color:var(--color-1)
     }
         & a:link,
         & a:visited,
@@ -176,6 +184,7 @@ body{
         & a:hover{
             background-color: var(--color-2);
             color: var(--color-1);
+            border:1px solid var(--color-1);            
             
         }
     }
